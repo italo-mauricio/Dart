@@ -7,7 +7,6 @@ void main(){
   String? idade;  // colocando ? no final da declaração do tipo, eu atribuo a esta variável o valor de Null
 
 
-
  // call functions
  testingNullSafetyFeatures();
  testingLate();
@@ -24,6 +23,7 @@ void testingNullSafetyFeatures(){
     // como Null
 
     print(name!);   // utilizando a ! no final, a IDE retorna um Warning
+    name = null;    // por não utilizar o late, eu posso atribuir Null novamente a variável
 }
 
 void testingLate(){
