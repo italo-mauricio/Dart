@@ -6,11 +6,19 @@ class Phone{
   final double weight;
 
   Phone(this.color, this.qtdProcess, this.tam, this.weight);
+
+  String toString(){
+    return "Cor: $color \nQuantidade de processadores: $qtdProcess \nPeso: $weight \nTamanho: $tam"; 
+  }
+
 }
 
 void main(){
   Phone myPhone = Phone("Blue", 5, 0.800, 5.7);
   Phone mySecondPhone = Phone("Red", 6, 0.500, 5.8);
 
-  print(myPhone.color);
+  print(myPhone.toString());
+  print("");
+  print(mySecondPhone.toString());
+  
 }
