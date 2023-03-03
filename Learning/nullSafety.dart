@@ -6,10 +6,14 @@ void main(){
 
   String? idade;  // colocando ? no final da declaração do tipo, eu atribuo a esta variável o valor de Null
 
- testeNullSafetyFeatures();
+
+
+ // call functions
+ testingNullSafetyFeatures();
+ testingLate();
 }
 
-void testeNullSafetyFeatures(){
+void testingNullSafetyFeatures(){
     String? name;
 
     // em outra parte do código, minha variável passa a receber uma atribuição
@@ -20,4 +24,15 @@ void testeNullSafetyFeatures(){
     // como Null
 
     print(name!);   // utilizando a ! no final, a IDE retorna um Warning
+}
+
+void testingLate(){
+
+  // O late serve para dizer para o software que quando eu declarar a variável como Null a primeira vez
+  // quando eu atribuir um valor a ela, ela nunca mais poderá receber Null novamente
+
+  late String idade;
+  idade = "25";
+  print(idade);
+
 }
