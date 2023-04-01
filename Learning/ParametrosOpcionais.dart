@@ -28,12 +28,11 @@ void botaoCriado(){
 
 void criarBotao(String texto, Function demonstracao, {required String cor, required double largura}) {
     print(texto);
-    print(cor ?? "Azul");
+    print(cor ?? "Azul");  //defino ?? como padrão, podendo ser alterado na chamada da função
     print(largura ?? 15.0);
     demonstracao();
 
 }
-
 double calcula(double a, {required double b, required double c}) {
   double resp = a * b * c;
   return resp;
